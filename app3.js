@@ -79,7 +79,7 @@ pause.addEventListener("click", () => {
 
 restart.addEventListener("click", () => {
 
-    window.location.href="index1.html"; 
+    window.location.href="index.html"; 
 });
 
 function playSplashClone(volume = 1) {
