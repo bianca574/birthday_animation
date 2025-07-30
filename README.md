@@ -21,6 +21,10 @@ Check out the live site here: [https://bianca574.github.io/birthday_animation/]
 - Interactive start: click to begin the animation 🖱️
 - Custom controls: pause, play, and restart buttons ⏯️
 
+## 📸 Screenshot
+
+[images/screenshot.jpg]
+
 ## 📄 License
 
 This project is closed-source. All rights reserved.
