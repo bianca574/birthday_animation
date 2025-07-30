@@ -4,7 +4,7 @@ A fun and colorful birthday animation made with HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
 
-Check out the live site here:
+Check out the live site here: [https://bianca574.github.io/birthday_animation/]
 
 ## 🛠️ Technologies Used
 
