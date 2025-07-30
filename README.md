@@ -18,6 +18,8 @@ Check out the live site here:
 - Colorful design
 - Playful motion effects
 - Sounds
+- Interactive start: click to begin the animation 🖱️
+- Custom controls: pause, play, and restart buttons ⏯️
 
 ## 📄 License
 
