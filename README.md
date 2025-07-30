@@ -23,7 +23,7 @@ Check out the live site here: [https://bianca574.github.io/birthday_animation/]
 
 ## 📸 Screenshot
 
-[!Birthday Animation](images/screenshot.jpg)
+![Birthday Animation](images/screenshot.jpg)
 
 ## 📄 License
 
