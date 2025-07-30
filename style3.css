@@ -1,0 +1,431 @@
+:root{
+    --clr-neon: #f4028f;
+    --bg-col: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    background: var(--bg-col);
+}
+
+button {
+    padding: 20px 30px;
+    margin-left: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 15rem;
+    font-size: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.message {
+    font-size: 3rem;
+    color: var(--clr-neon);
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    text-shadow: 0 0 0.15em hsl(315, 100%, 50%), 0 0 0.45em currentColor;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    box-sizing: border-box;
+    line-height: 1;
+    padding: 0;
+}
+
+.message span {
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+
+.cake-wrapper{
+    position: relative;
+    height: 100%; /* or whatever your cake + candles need */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.cake {
+    top: 10rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tier1, .tier2, .tier3, .tier4 {
+    height: 5rem;
+}
+
+.tier1 {
+    height: 4.5rem;
+    width: 8rem;
+    background: rgb(0, 255, 55);
+}
+
+.tier2 {
+    width: 12rem;
+    background: rgb(0, 89, 255);
+}
+
+.tier3 {
+    width: 16rem;
+    background: rgb(255, 98, 0);
+}
+
+.tier4 {
+    width: 20rem;
+    background: var(--clr-neon);
+}
+
+.candle {
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+}
+
+.one {
+    width: 0.7rem;
+    height: 5.3rem;
+    background: pink;
+    border-radius: 2px;
+    bottom: 18rem;
+    left: 11.7rem;
+}
+
+.nine {
+    bottom: 23.5rem;
+    left: 10.5rem;
+}
+
+.nine .circle {
+    width: 3rem;
+    height: 3rem;
+    border: 10px solid pink;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.nine .tail {
+    width: 0.7rem;
+    height: 4.4rem;
+    background: pink;
+    position: absolute;
+    left: 2.3rem;
+    top: 1rem;
+}
+
+.container {
+    bottom: 26rem;
+    display: inline-block;
+    position: relative;
+    transform-origin: center bottom;
+    animation: flicker 3ms 200ms ease-in infinite alternate;
+}
+
+.first {
+    left: 12.1rem;
+}
+
+.second {
+    left: 15.2rem;
+}
+
+.flame {
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+
+.yellow {
+    left: 10px;
+    width: 5px;       /*30*/
+    height: 5px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange {
+    left: 10px;
+    width: 10px;       /*40*/
+    height: 10px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red {
+    left: 5px;
+    width: 20px;       /*50*/
+    height: 20px;
+    background: orangered;
+    box-shadow: 0px 0px 5px 4px orangered;
+}
+
+.white {
+    left: 13px;
+    bottom: -4px;
+    width: 5px;       /*30*/
+    height: 5px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.blue {
+    left: 15px;
+    bottom: -15px;
+    width: 1px;       /*10*/
+    height: 1px;
+    background: slateblue;
+    box-shadow: 0px 0px 15px 10px slateblue;
+}
+
+.black {
+    left: 10px;
+    bottom: -30px;
+    width: 10px;       /*40*/
+    height: 10px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker {
+    
+    0% {
+        transform: rotate(-1deg);
+    }
+
+    20% {
+        transform: rotate(1deg);
+    }
+
+    40% {
+        transform: rotate(-1deg);
+    }
+
+    60% {
+        transform: rotate(1deg)
+        scaleY(1.04);
+    }
+
+    80% {
+        transform: rotate(-2deg)
+        scaleY(0.92);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+.btn {
+    color: var(--bg-col);
+    animation: pulse 2s infinite;
+    transition: 0.5s ease-in-out; 
+    text-shadow: 0 0 0.1em hsl(0, 0%, 0%), 0 0 0.45em currentColor;
+    border: 2px solid var(--clr-neon);
+    background: var(--clr-neon);
+    border-radius: 15px;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    transition: 0.5s ease-in-out;
+}
+
+.btn::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--bg-col);
+    z-index: -1;
+    transition: opacity 100ms linear;
+    border-radius: 15px;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+.btn:hover::after {
+    opacity: 1;
+}
+
+.btn:hover {
+    color: var(--clr-neon);
+    background: var(--bg-col);
+    text-shadow: 0 0 0.15em hsl(315, 100%, 50%), 0 0 0.45em currentColor;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 413px){
+
+    .message {
+        margin-top: 0.5rem;
+        margin-bottom: 9.3rem;
+        line-height: 1.2;
+    }
+
+    button {
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .one {
+        bottom: 15.5rem;
+        left: 9.5rem;
+    }
+
+    .nine {
+        left: 11.2rem;
+    }
+
+    .first {
+        left: 9.9rem;
+    }
+    
+    .second {
+        left: 12.8rem;
+    }
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 427px){
+
+    .message {
+        margin-top: 0.5rem;
+        margin-bottom: 9.3rem;
+        line-height: 1.2;
+    }
+
+    button {
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .one {
+        bottom: 15.5rem;
+        left: 10.6rem;
+    }
+
+    .nine {
+        left: 12.3rem;
+    }
+
+    .first {
+        left: 11rem;
+    }
+    
+    .second {
+        left: 14rem;
+    }
+
+}
+
+@media screen and (min-width: 428px) and (max-width: 480px){
+
+    .message {
+        margin-top: 0.5rem;
+        margin-bottom: 9.3rem;
+        line-height: 1.2;
+    }
+
+    button {
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .one {
+        bottom: 15.5rem;
+        left: 11.2rem;
+    }
+
+    .nine {
+        left: 12.9rem;
+    }
+
+    .first {
+        left: 11.5rem;
+    }
+    
+    .second {
+        left: 14.5rem;
+    }
+
+}
+ 
