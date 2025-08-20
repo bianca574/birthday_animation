@@ -1,6 +1,6 @@
 # Birthday Animation 🎂🎈
 
-A fun and colorful birthday animation made with HTML, CSS, and JavaScript.
+A fun and colorful birthday animation.
 
 ## 🌐 Live Demo
 
