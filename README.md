@@ -6,6 +6,8 @@ A fun and colorful birthday animation made with HTML, CSS, and JavaScript.
 
 Check out the live site here: [https://bianca574.github.io/birthday_animation/]
 
+![Birthday Animation](images/screenshot.jpg)
+
 ## 🛠️ Technologies Used
 
 - HTML
@@ -20,10 +22,6 @@ Check out the live site here: [https://bianca574.github.io/birthday_animation/]
 - Sounds
 - Interactive start: click to begin the animation 🖱️
 - Custom controls: pause, play, and restart buttons ⏯️
-
-## 📸 Screenshot
-
-![Birthday Animation](images/screenshot.jpg)
 
 ## 📄 License
 
